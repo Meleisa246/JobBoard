@@ -14,7 +14,7 @@
         <li><a href="#">Web Developers</a></li>
         <li><a href="#">Python</a></li>
         <li><a href="#">HTML5</a></li>
-        <li><a href="#">CSS3</a></li>
+        <li><a href="#">Javascript</a></li>
       </ul>
     </div>
     <div class="col-6 col-md-3 mb-4 mb-md-0">
@@ -48,7 +48,7 @@
   <div class="row text-center">
     <div class="col-12">
       <p class="copyright"><small>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        
       Copyright   &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Assignment 3 <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>. Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
       <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small></p>
     </div>

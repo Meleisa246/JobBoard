@@ -24,7 +24,7 @@ if(isset($_GET['id'])) {
     $profile = $select->fetch(PDO::FETCH_OBJ);
 
 
-    //grapping saved_jobs
+    
 
     $saved_jobs = $conn->query("SELECT jobs.id AS id, jobs.company_image AS company_image, jobs.company_name AS company_name, jobs.job_region 
     AS job_region, jobs.job_type AS job_type, jobs.job_title AS job_title FROM jobs JOIN saved_jobs 

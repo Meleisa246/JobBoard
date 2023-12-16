@@ -33,7 +33,7 @@
           <div class="col-md-7">
             <h1 class="text-white font-weight-bold"><?php echo $profile->username; ?></h1>
             <div class="custom-breadcrumbs">
-              <a href="#">Home</a> <span class="mx-2 slash">/</span>
+              <a href="#"> Home </a> <span class="mx-2 slash">/</span>
               <span class="text-white"><strong><?php echo $profile->username; ?></strong></span>
             </div>
           </div>

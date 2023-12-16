@@ -21,7 +21,7 @@
 
       if(empty($_POST['job_title']) OR empty($_POST['job_region']) OR empty($_POST['job_type']) OR empty($_POST['vacancy']) OR empty($_POST['experience']) 
       OR empty($_POST['salary']) OR empty($_POST['gender']) OR empty($_POST['application_deadline']) OR empty($_POST['job_description']) OR empty($_POST['responsibilities']) 
-      OR empty($_POST['education_experience']) OR empty($_POST['other_benifits']) OR empty($_POST['company_email']) OR empty($_POST['company_name']) OR empty($_POST['company_id']) OR empty($_POST['company_image']
+      OR empty($_POST['education_experience']) OR empty($_POST['other_benefits']) OR empty($_POST['company_email']) OR empty($_POST['company_name']) OR empty($_POST['company_id']) OR empty($_POST['company_image']
       OR empty($_POST['job_category'])) 
       ) {
         echo "<script>alert('one or more inputs are empty')</script>";
@@ -39,7 +39,7 @@
         $job_description = $_POST['job_description'];
         $responsibilities = $_POST['responsibilities'];
         $education_experience = $_POST['education_experience'];
-        $other_benifits = $_POST['other_benifits'];
+        $other_benefits = $_POST['other_benefits'];
         $company_email = $_POST['company_email'];
         $company_name = $_POST['company_name'];
         $company_id = $_POST['company_id'];
@@ -49,7 +49,7 @@
         $insert = $conn->prepare("INSERT INTO jobs (job_title, job_region, job_type, vacancy, job_category, experience, salary, gender, application_deadline,
          job_description, responsibilities, education_experience, other_benifits, company_email, company_name, company_id, company_image) VALUES(
           :job_title, :job_region, :job_type, :vacancy, :job_category, :experience, :salary, :gender, :application_deadline,
-          :job_description, :responsibilities, :education_experience, :other_benifits,  :company_email, :company_name, :company_id, :company_image
+          :job_description, :responsibilities, :education_experience, :other_benefits,  :company_email, :company_name, :company_id, :company_image
          )");
 
          $insert->execute([
@@ -66,7 +66,7 @@
           ':job_description' => $job_description,
           ':responsibilities' => $responsibilities,
           ':education_experience' => $education_experience,
-          ':other_benifits' => $other_benifits,
+          ':other_benefits' => $other_benefits,
           ':company_email' => $company_email,
           ':company_name' => $company_name,
           ':company_id' => $company_id,
@@ -128,15 +128,15 @@
               <div class="form-group">
                 <label for="job-region">Job Region</label>
                 <select name="job_region" class="selectpicker border rounded" id="job-region" data-style="btn-black" data-width="100%" data-live-search="true" title="Select Region">
-                      <option>Anywhere</option>
-                      <option>San Francisco</option>
-                      <option>Palo Alto</option>
-                      <option>New York</option>
-                      <option>Manhattan</option>
-                      <option>Ontario</option>
+                      <option>Anywhere in the World</option>
+                      <option>Jamaica</option>
+                      <option>Cuba</option>
+                      <option>United States of America</option>
+                      <option>London</option>
+                      <option>Europe</option>
                       <option>Toronto</option>
-                      <option>Kansas</option>
-                      <option>Mountain View</option>
+                      <option>Asia</option>
+                      <option>Africa</option>
                     </select>
               </div>
 
@@ -181,7 +181,7 @@
                 <select name="gender" class="selectpicker border rounded" id="" data-style="btn-black" data-width="100%" data-live-search="true" title="Select Gender">
                   <option>Male</option>
                   <option>Female</option>
-                  <option>Any</option>
+                  <option>Non-binary</option>
                 </select>
               </div>
 
@@ -213,8 +213,8 @@
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="text-black" for="">Other Benifits</label> 
-                  <textarea name="other_benifits" id="" cols="30" rows="7" class="form-control" placeholder="Write Other Benifits..."></textarea>
+                  <label class="text-black" for="">Other Benefits</label> 
+                  <textarea name="other_benefits" id="" cols="30" rows="7" class="form-control" placeholder="Write Other Benefits..."></textarea>
                 </div>
               </div>
            
