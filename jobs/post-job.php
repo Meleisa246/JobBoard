@@ -24,7 +24,7 @@
       OR empty($_POST['education_experience']) OR empty($_POST['other_benefits']) OR empty($_POST['company_email']) OR empty($_POST['company_name']) OR empty($_POST['company_id']) OR empty($_POST['company_image']
       OR empty($_POST['job_category'])) 
       ) {
-        echo "<script>alert('one or more inputs are empty')</script>";
+        echo "<script>alert('One or more inputs are empty')</script>";
       } else {
 
         $job_title = $_POST['job_title'];

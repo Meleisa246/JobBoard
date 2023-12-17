@@ -13,7 +13,7 @@
   if(isset($_POST['submit'])) {
 
     if(empty($_POST['username']) OR empty($_POST['email']) OR empty($_POST['password']) OR empty($_POST['re-password'])) {
-      echo "<script>alert('some inputs are empty')</script>";
+      echo "<script>alert('Some inputs are empty')</script>";
     } else {
 
       $username = $_POST['username'];
@@ -28,7 +28,7 @@
 
         
         //checking for username 
-        if(strlen($email) > 22 OR strlen($username) > 15 ) {
+        if(strlen($email) > 30 OR strlen($username) > 20 ) {
           echo "<script>alert('email or username is too big')</script>";
 
         } else {
@@ -39,7 +39,7 @@
           $validate->execute();
 
           if($validate->rowCount() > 0) {
-            echo "<script>alert('email or username is aleardy taken')</script>";
+            echo "<script>alert('email or username is already taken')</script>";
 
           } else {
 
@@ -64,7 +64,7 @@
        
 
       } else {
-        echo "<script>alert('passwords are not matching')</script>";
+        echo "<script>alert('passwords doesn't match')</script>";
 
       }
 

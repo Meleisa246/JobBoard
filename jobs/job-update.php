@@ -42,7 +42,7 @@
       OR empty($_POST['education_experience']) OR empty($_POST['other_benifits']) OR empty($_POST['company_email']) OR empty($_POST['company_name']) OR empty($_POST['company_id']) OR empty($_POST['company_image']
       OR empty($_POST['job_category'])) 
       ) {
-        echo "<script>alert('one or more inputs are empty')</script>";
+        echo "<script>alert('One or more inputs are empty')</script>";
       } else {
 
         $job_title = $_POST['job_title'];
@@ -145,15 +145,15 @@
               <div class="form-group">
                 <label for="job-region">Job Region</label>
                 <select name="job_region" class="selectpicker border rounded" id="job-region" data-style="btn-black" data-width="100%" data-live-search="true" title="Select Region">
-                      <option>Anywhere</option>
-                      <option>San Francisco</option>
-                      <option>Palo Alto</option>
-                      <option>New York</option>
-                      <option>Manhattan</option>
-                      <option>Ontario</option>
+                <option>Anywhere in the World</option>
+                      <option>Jamaica</option>
+                      <option>Cuba</option>
+                      <option>United States of America</option>
+                      <option>London</option>
+                      <option>Europe</option>
                       <option>Toronto</option>
-                      <option>Kansas</option>
-                      <option>Mountain View</option>
+                      <option>Asia</option>
+                      <option>Africa</option>
                     </select>
               </div>
 
@@ -198,7 +198,7 @@
                 <select name="gender" class="selectpicker border rounded" id="" data-style="btn-black" data-width="100%" data-live-search="true" title="Select Gender">
                   <option>Male</option>
                   <option>Female</option>
-                  <option>Any</option>
+                  <option>Non-binary</option>
                 </select>
               </div>
 
