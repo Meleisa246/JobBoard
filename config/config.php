@@ -3,13 +3,21 @@
 
     try {
         
-        $host = "localhost";
+        //$host = "localhost";
 
-        $dbname = "jobboard";
+        //$dbname = "jobboard";
     
-        $user = "root";
+        //$user = "root";
     
-        $pass = "";
+        //$pass = "";
+
+        $host = "sql107.infinityfree.com";
+
+        $dbname = "if0_35473745_jobboard";
+    
+        $user = "if0_35473745";
+    
+        $pass = "nBsEZ6ee3Ti";
     
     
         $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);

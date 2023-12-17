@@ -4,7 +4,7 @@
 
 
 
-  define("APPURL", "http://localhost/jobboard");
+  define("APPURL", "http://web-assignment3.42web.io");
 
 ?>
 <!doctype html>
